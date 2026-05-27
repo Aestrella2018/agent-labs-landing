@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Labs | Arquitectura Multi-Agente Autónoma</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        darkCard: '#131c2e',
+                        accentCyan: '#00f2fe',
+                        accentPurple: '#4facfe',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.15);
+            border-color: rgba(0, 242, 254, 0.4);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="text-slate-200 antialiased min-h-screen">
+
+    <!-- Subdomain Tag Banner -->
+    <div class="bg-slate-900 border-b border-slate-800 text-center py-2 text-xs tracking-widest text-slate-400">
+        ENTORNO DE DESPLIEGUE EN VIVO: <span class="text-accentCyan font-mono">labs.alexestrella.qd.je</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <div class="h-9 w-9 rounded-lg bg-gradient-to-tr from-accentPurple to-accentCyan flex items-center justify-center text-darkBg font-bold text-lg">
+                λ
+            </div>
+            <span class="text-xl font-bold tracking-tight text-white">AlexEstrella <span class="text-accentCyan font-light">Labs</span></span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+            <a href="#arquitectura" class="hover:text-white transition">Arquitectura Core</a>
+            <a href="#gobierno" class="hover:text-white transition">Demos Gobierno</a>
+            <a href="#privado" class="hover:text-white transition">Demos Sector Privado</a>
+        </nav>
+        <a href="#contacto" class="border border-accentCyan/30 text-accentCyan hover:bg-accentCyan/10 px-4 py-2 rounded-lg text-sm font-semibold transition">
+            Conectar GitHub
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-16 pb-20 text-center relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-accentCyan/10 to-accentPurple/10 blur-3xl -z-10 rounded-full max-w-2xl mx-auto h-72"></div>
+        
+        <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-accentCyan/10 text-accentCyan mb-6 border border-accentCyan/20">
+            <span class="w-2 h-2 rounded-full bg-accentCyan animate-pulse"></span> Nueva Era de Automatización Cognitiva Mundial
+        </span>
+        
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            Orquestando el Futuro con <br>
+            <span class="gradient-text">Ecosistemas de Multi-Agentes Autónomos</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+            La automatización lineal ha quedado obsoleta. Diseñamos redes de agentes de Inteligencia Artificial especializados que cooperan, razonan, toman decisiones complejas e interactúan directamente con tus sistemas y APIs para resolver los desafíos más críticos del sector público y corporativo.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#gobierno" class="bg-gradient-to-r from-accentPurple to-accentCyan text-darkBg font-bold px-8 py-3.5 rounded-lg transition shadow-lg hover:opacity-90">
+                Explorar Catálogo de Agentes
+            </a>
+            <a href="#arquitectura" class="bg-slate-900 border border-slate-800 hover:border-slate-700 px-8 py-3.5 rounded-lg font-semibold transition">
+                Ver Arquitectura en Azure
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Arquitectura / Core -->
+    <section id="arquitectura" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-900">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">¿Cómo Funcionan Nuestros Sistemas de Agentes?</h2>
+            <p class="text-slate-400">Implementamos las mejores prácticas globales recomendadas por los líderes de la industria en la nube para garantizar soluciones escalables, seguras y con una capacidad de entendimiento sin precedentes.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Orquestación Inteligente -->
+            <div class="bg-darkCard/50 border border-slate-800 p-8 rounded-xl">
+                <div class="text-accentCyan text-3xl mb-4">🧠</div>
+                <h3 class="text-xl font-bold text-white mb-3">Orquestación Avanzada</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    En lugar de seguir reglas rígidas, los agentes operan como un equipo de trabajo experto. Evaluán el problema original, se dividen las tareas según su especialidad y coordinan los pasos de manera flexible para alcanzar el objetivo óptimo.
+                </p>
+            </div>
+
+            <!-- Memoria a Largo Plazo -->
+            <div class="bg-darkCard/50 border border-slate-800 p-8 rounded-xl">
+                <div class="text-accentCyan text-3xl mb-4">💾</div>
+                <h3 class="text-xl font-bold text-white mb-3">Memoria a Largo Plazo</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Nuestros agentes no olvidan el contexto importante. Cuentan con un sistema de almacenamiento avanzado que les permite recordar interacciones pasadas, normativas legales previas y preferencias organizacionales para mejorar continuamente sus respuestas.
+                </p>
+            </div>
+
+            <!-- Uso de herramientas / Conectividad MCP -->
+            <div class="bg-darkCard/50 border border-slate-800 p-8 rounded-xl">
+                <div class="text-accentCyan text-3xl mb-4">🔌</div>
+                <h3 class="text-xl font-bold text-white mb-3">Acceso Total a Herramientas</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    No solo conversan, también ejecutan acciones. Mediante protocolos de conexión estandarizados, los agentes pueden leer bases de datos de forma segura, auditar repositorios en GitHub, conectarse a servicios en la nube y operar aplicaciones externas de manera autónoma.
+                </p>
+            </div>
+        </div>
+
+        <!-- Azure Backend Badge -->
+        <div class="mt-12 bg-darkCard/30 border border-slate-800/60 rounded-xl p-6 flex flex-wrap justify-between items-center gap-4">
+            <div>
+                <h4 class="text-white font-semibold">Infraestructura Tecnológica Integrada</h4>
+                <p class="text-slate-400 text-xs">Todo el procesamiento y seguridad backend se despliega nativamente usando la potencia empresarial de Azure.</p>
+            </div>
+            <div class="flex gap-3 text-xs font-mono text-slate-400">
+                <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded">Azure OpenAI Service</span>
+                <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded">Azure Static Web Apps</span>
+                <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded">GitHub Actions CI/CD</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Demos: SECTOR GOBIERNO -->
+    <section id="gobierno" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="mb-12">
+            <span class="text-accentPurple text-xs font-bold uppercase tracking-wider">Módulos de Alto Impacto</span>
+            <h2 class="text-3xl font-bold text-white mt-2">Demos para el Sector Gobierno y Entidades del Estado</h2>
+            <p class="text-slate-400 mt-1">Soluciones inteligentes diseñadas para resolver la burocracia, agilizar procesos críticos y optimizar el servicio ciudadano.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Agente 1: OSCE -->
+            <div class="bg-darkCard border border-slate-800 p-6 rounded-xl transition glow-card flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-amber-500/10 text-amber-400 text-xs font-semibold px-2.5 py-1 rounded border border-amber-500/20">Problemática de Alta Complejidad</span>
+                        <div class="flex gap-2">
+                            <span class="text-xs bg-slate-800 px-2 py-0.5 rounded font-mono text-slate-300">Azure OpenAI</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Agente Auditor de Contrataciones Públicas (OSCE)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        **Problema Crítico:** Los procesos de contratación pública sufren retrasos severos y observaciones legales debido a la mala redacción de los Términos de Referencia (TDR) o descalificaciones erróneas.  
+                        **Solución del Agente:** Audita de forma autónoma bases administrativas y expedientes técnicos. Identifica vacíos legales, riesgos de direccionamiento y genera de manera automatizada informes de subsanación o desafíos legales estructurados frente al tribunal de OSCE.
+                    </p>
+                </div>
+                <button class="w-full mt-4 bg-slate-900 border border-slate-800 text-slate-300 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition">
+                    Ejecutar Simulación de TDR
+                </button>
+            </div>
+
+            <!-- Agente 2: SUNAT -->
+            <div class="bg-darkCard border border-slate-800 p-6 rounded-xl transition glow-card flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded border border-blue-500/20">Orientación y Cumplimiento</span>
+                        <div class="flex gap-2">
+                            <span class="text-xs bg-slate-800 px-2 py-0.5 rounded font-mono text-slate-300">Cosmos DB</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Agente Consultor Tributario Automatizado (SUNAT / MYPE)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        **Problema Crítico:** La alta informalidad y los errores constantes en declaraciones tributarias de las micro y pequeñas empresas (MYPE) debido a la complejidad de las normativas y los regímenes de SUNAT.  
+                        **Solución del Agente:** Resuelve consultas complejas sobre regímenes tributarios, revisa transacciones de compras/ventas mediante IA para alertar sobre inconsistencias antes del envío oficial y guía paso a paso en la activación de la Clave SOL y constitución de empresas.
+                    </p>
+                </div>
+                <button class="w-full mt-4 bg-slate-900 border border-slate-800 text-slate-300 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition">
+                    Probar Asistente MYPE Tributario
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Demos: SECTOR PRIVADO / COMERCIAL -->
+    <section id="privado" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="mb-12">
+            <span class="text-accentCyan text-xs font-bold uppercase tracking-wider">Optimización Comercial y Operativa</span>
+            <h2 class="text-3xl font-bold text-white mt-2">Demos para el Sector Privado, Comercial e Industrial</h2>
+            <p class="text-slate-400 mt-1">Sistemas multi-agente dedicados a potenciar la rentabilidad, logística e innovación en sectores estratégicos.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Agroexportadoras -->
+            <div class="bg-darkCard border border-slate-800 p-6 rounded-xl transition glow-card flex flex-col justify-between">
+                <div>
+                    <span class="text-emerald-400 text-xs font-mono font-bold block mb-2">// AGROEXPORTACIÓN</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Agente Coordinador de Logística y Cadena de Frío</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        **Problema:** Pérdidas millonarias por retrasos logísticos en puertos o fallas térmicas imprevistas en contenedores de exportación.  
+                        **Acción:** Monitorea de forma continua sensores de temperatura en contenedores, predice cuellos de botella aduaneros y coordina de manera autónoma desvíos de carga o alertas de mantenimiento con operadores logísticos terrestres y marítimos.
+                    </p>
+                </div>
+                <span class="text-xs text-accentCyan bg-accentCyan/5 p-2 rounded text-center border border-accentCyan/10 font-mono">Conectado a Azure IoT Hub</span>
+            </div>
+
+            <!-- Mineras -->
+            <div class="bg-darkCard border border-slate-800 p-6 rounded-xl transition glow-card flex flex-col justify-between">
+                <div>
+                    <span class="text-red-400 text-xs font-mono font-bold block mb-2">// MINERÍA</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Agente Supervisor de Seguridad Industrial y Mantenimiento</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        **Problema:** Tiempos muertos críticos por fallas mecánicas en maquinaria pesada de extracción y riesgos en el cumplimiento de normativas de seguridad laboral.  
+                        **Acción:** Analiza telemetría de flotas mineras en tiempo real, genera reportes de mantenimiento predictivo obligatorios y audita bitácoras de incidentes detectando patrones de riesgo laboral antes de que ocurra un accidente.
+                    </p>
+                </div>
+                <span class="text-xs text-accentCyan bg-accentCyan/5 p-2 rounded text-center border border-accentCyan/10 font-mono">Azure Cognitive Services</span>
+            </div>
+
+            <!-- Clínicas -->
+            <div class="bg-darkCard border border-slate-800 p-6 rounded-xl transition glow-card flex flex-col justify-between">
+                <div>
+                    <span class="text-purple-400 text-xs font-mono font-bold block mb-2">// SALUD & CLÍNICAS</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Agente Gestor de Admisiones y Triaje Inteligente</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        **Problema:** Colapso de las salas de espera de emergencias médicas y asignación ineficiente de especialistas según la gravedad del paciente.  
+                        **Acción:** Procesa los síntomas reportados por pacientes mediante lenguaje natural, prioriza casos bajo protocolos médicos internacionales (Triaje) y asigna citas automáticamente optimizando el uso de consultorios e insumos hospitalarios.
+                    </p>
+                </div>
+                <span class="text-xs text-accentCyan bg-accentCyan/5 p-2 rounded text-center border border-accentCyan/10 font-mono">Azure Health Data Services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / GitHub Integration Section -->
+    <section id="contacto" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-900 text-center">
+        <div class="max-w-2xl mx-auto bg-gradient-to-b from-darkCard to-darkBg border border-slate-800 p-10 rounded-2xl">
+            <h3 class="text-2xl font-bold text-white mb-4">Despliegue Continuo Automatizado</h3>
+            <p class="text-slate-400 text-sm mb-6">
+                Este portafolio dinámico está estructurado para leer directamente tus repositorios públicos y privados en GitHub. Cada vez que actualices el backend de un agente, los cambios se reflejarán automáticamente en esta landing page.
+            </p>
+            <div class="inline-flex items-center gap-2 text-xs bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg font-mono text-slate-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Conectado vía GitHub Actions a Azure Static Web Apps
+            </div>
+        </div>
+        
+        <p class="text-slate-600 text-xs mt-12">
+            &copy; 2026 AlexEstrella AI Labs. Todos los derechos reservados. Desarrollado bajo arquitectura de sistemas autónomos.
+        </p>
+    </section>
+
+</body>
+</html>
